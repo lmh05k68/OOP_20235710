@@ -1,3 +1,4 @@
+//6.2
 package JavaBasics;
 import java.util.Scanner;
 public class InputFromKeyboard {
