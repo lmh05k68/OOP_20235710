@@ -2,9 +2,9 @@ package sum;
 import java.util.Scanner;
 public class ArraySum {
 	public static void main(String[] args) {
-		Scanner keyboardScanner = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
 		System.out.print("So phan tu cua mang: ");
-		int n = ketboard.nextInt();
+		int n = keyboard.nextInt();
 		int[] arr = new int[n];
 		System.out.println("Nhap phan tu:");
 		for(int i = 0; i < n; i++) {
