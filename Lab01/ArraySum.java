@@ -1,3 +1,4 @@
+//6.5
 package sum;
 import java.util.Scanner;
 public class ArraySum {
