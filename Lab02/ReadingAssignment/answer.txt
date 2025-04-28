@@ -1,0 +1,13 @@
+1. If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
+-> Java không cho phép hai constructor có cùng kiểu và số lượng tham số giống nhau. Việc tạo các constructor với cùng số lượng và kiểu tham số sẽ gây lỗi do constructor overloading dựa vào danh sách tham số để phân biệt các phương thức khởi tạo.
+Nếu tạo một constructor để khởi tạo DVD bằng title (DigitalVideoDisc(String title)) và một constructor khác để khởi tạo DVD bằng category (DigitalVideoDisc(String category)), Java sẽ không thể phân biệt chúng vì cả hai đều nhận một tham số kiểu String,
+điều này sẽ dẫn đến lỗi "duplicate constructor" khi biên dịch.
+
+2. Is JAVA a Pass by Value or a Pass by Reference programming language?
+-> Java chỉ truyền tham số theo giá trị (Pass by Value)
+
+3. After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+-> Phương thức swap() chỉ thay đổi giá trị của tham số cục bộ, không thay đổi nội dung của các đối tượng gốc. Do đó, tiêu đề của hai đối tượng jungleDVD và cinderellaDVD vẫn giữ nguyên sau khi gọi swap()
+
+4. After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+-> Tiêu đề của jungleDVD thay đổi vì phương thức setTitle() chỉnh sửa nội dung của đối tượng được tham chiếu. Việc tạo một đối tượng mới (new DigitalVideoDisc(oldTitle)) không có tác động đến jungleDVD, bởi vì Java chỉ truyền giá trị của tham chiếu, chứ không truyền trực tiếp đối tượng.

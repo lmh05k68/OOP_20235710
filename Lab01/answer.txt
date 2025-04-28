@@ -1,0 +1,7 @@
+// 6.1
+- What happens if users choose "Cancel"?
+-> Khi người dùng chọn "Cancel", hệ thống sẽ hiển thị "You've chosen "No""
+
+- How to customize the options to users, e.g only two options: "Yes" and "No", OR "I do" and "I don't" 
+-> Có thể sử dụng JOptionPane.showOptionDialog, khởi tạo mảng chứa giá trị ["Yes","No"] hoặc ["I do","I don't"] và áp dụng các lựa chọn tương ứng với phần tử mảng. Chi tiết cách làm này em để ở bài 2.2.6 ạ
+
