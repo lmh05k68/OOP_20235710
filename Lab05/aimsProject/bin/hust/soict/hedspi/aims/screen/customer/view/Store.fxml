@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="hust.soict.hedspi.aims.screen.customer.controller.ViewStoreController"
+      alignment="CENTER" spacing="10"
+      prefWidth="1024" prefHeight="768">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox alignment="CENTER" prefHeight="100">
+        <Label text="AIMS">
+            <font>
+                <Font size="50"/>
+            </font>
+            <textFill>
+                <Color fx:constant="CYAN" />
+            </textFill>
+            <HBox.margin>
+                <Insets left="10"/>
+            </HBox.margin>
+        </Label>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Button text="View Cart" onAction="#btnViewCartPressed" prefWidth="100" prefHeight="50">
+            <HBox.margin>
+                <Insets right="20"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+
+    <ScrollPane prefWidth="1024" prefHeight="760" fitToWidth="true">
+        <content>
+            <GridPane fx:id="gridPane" prefWidth="0" prefHeight="0"/>
+        </content>
+    </ScrollPane>
+
+</VBox>
